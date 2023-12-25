@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    height:100vh;
+    padding:5px 10px;
+    background: rgba(252, 222, 166, 0.789);
+}
+header{
+    width:100%;
+    height:40px;
+    display:flex;
+    justify-content: space-between;
+}
+.headbtn{
+    display:inline-block;
+}
+.headbtn button{
+    padding:5px 15px;
+    margin-top:5px;
+    margin-right:10px;
+    border-radius: 20px;
+    border:none;
+}
+.headbtn button:nth-child(2){
+    background:red;
+    border:none;
+    color:#fff;
+}
+.bardiv{
+    display:inline-block;
+    vertical-align: top;
+    margin-top:10px;
+    margin-right:10px;
+    cursor:pointer;
+}
+.nav{
+    display:none;
+}
+.active{
+    display:block;
+    width:100%;
+    min-height:10vh;
+    padding:20px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+nav ul{
+    list-style:none;
+}
+.fa-xmark{
+    display:none;
+}
+.unlockdiv{
+    width:100%;
+    min-height:20vh;
+}
+.unlockdiv--menu{
+    width:100%;
+    height:30px;
+    border:2px solid black;
+    padding:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+}
+.unlockdiv--unlock{
+    width:100%;
+    border:1px solid;
+    margin-top:10px;
+    min-height:30vh;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.unlockdiv--unlock button{
+    padding:5px 15px;
+    background:rgb(23, 23, 79);
+    border:none;
+    color:#fff;
+    margin-top:10px;
+}
+.projects h1{
+    letter-spacing: 2px;
+}
+.project--links{
+    width:100%;
+    display:flex;
+    margin-top:10px;
+    color:#000;
+    
+}
+.project--links a{
+    text-decoration: none;
+    margin-right:5px;
+    letter-spacing: 2px;
+}
+
+.project--links span{
+    font-weight: 600;
+    
+}
+.projects{
+    width:100%;
+    min-height:40vh;
+    border-bottom:1px solid rgb(168, 168, 168);
+    text-align: center;
+}
+.project--content{
+    display: flex;
+    justify-content: space-around;
+    margin-top:10px;
+}
+.project--content--s1,.project--content--s2{
+    display:flex;
+    justify-content: space-between;
+}
+.project--content--s1 img,
+.project--content--s2 img{
+    width:70px;
+    height:70px;
+    margin-top:10px;
+}
+.project--content--s1--content,
+.project--content--s2--content{
+    padding:10px;
+}
+.project--content--s1--content a,
+.project--content--s2--content a{
+    text-decoration: none;
+    color:rgb(0, 0, 113);
+}
+h3{
+    padding:10px 0;
+    letter-spacing: 1px;
+}
+.selection{
+    display:flex;
+    margin-bottom:20px;
+    width:100%;
+    min-height:10%;
+}
+.selection .types select{
+    margin:5px 0;
+    padding:5px;
+}
+.selection .types:not(:nth-child(1)){
+    margin-left:25px;
+}
+.project--count{
+    letter-spacing: 2px;
+}
+section{
+    width:100%;
+    min-height:50vh;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
+    gap:10px;
+    padding:15px;
+}
+.project--box{
+    border:1px solid;
+    padding:10px;
+    background:#fff;
+}
+.project--box--description{
+    margin:10px 0;
+
+}
+.project--box>p{
+    opacity:0.8;
+}
+.morebtn{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top:15px;
+}
+.morebtn button{
+    padding:5px 15px;
+    background:rgb(0, 0, 94);
+    color:#fff;
+    border:none;
+}
+.footer--one,.footer--two{
+    width:100%;
+    min-height:40vh;
+    border-top:1px solid ;
+    margin-top:20px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer--one--content ul,.footer--two--content ul{
+    list-style: none;
+    padding:0 15px;
+    line-height: 2;
+}
+.footer--one--content a,.footer--two--content a{
+    text-decoration: none;
+    color:#000;
+}
+.footer--one--icons{
+    padding:10px;
+    display:flex;
+    gap:10px;
+} 
+.footer--one--icons a{
+    color:#000000;
+}
+.footer--logo span{
+    opacity: 0.8;
+}
+.footer--two{
+    border-bottom: 1px solid;
+}
+.footer--nav ul{
+    width:100%;
+    display:inline-block;
+    list-style: none;
+    text-align: center;
+    padding:10px;
+}
+.footer--nav ul li{
+    display:inline-block;
+}
+.footer--nav ul li a{
+    text-decoration: none;
+    color:#000000;
+    opacity: 0.8;
+}
+.bottom{
+    text-align: center;
+    padding:10px;
+}
